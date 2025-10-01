@@ -37,21 +37,28 @@ Clone the repository and install the dependencies:
 
 `bash
 git clone https://github.com/nubeljaz-spec/Loan-Acceptance-Classification-Model.git
-cd Loan-Acceptance-Classification-Model
-pip install -r requirements.txt`
+cd Loan-Acceptance-Classification-Model`
+
+`pip install -r requirements.txt`
 
 ## Usage: You can import the functions from the provided script into your project. For example:
 
-`import pandas as pd
-from functions import preprocess_data, transform_data, logistic_regression, random_forest`
+`import pandas as pd`
+
+`from Classification_Model import preprocess_data, transform_data, logistic_regression, random_forest`
+
 Load your dataset
 `df = pd.read_csv("your_data.csv")`
+
 Step 1: Preprocess
 `df_preprocessed = preprocess_data(df)`
+
 Step 2: Transform
 `df_transformed = transform_data(df_preprocessed)`
+
 Step 3: Logistic Regression
 `logit_model = logistic_regression(df_transformed)`
+
 Step 4: Random Forest
 `rf_model = random_forest(df_transformed)`
 
